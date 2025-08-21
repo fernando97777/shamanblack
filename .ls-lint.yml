@@ -1,0 +1,12 @@
+ls:
+  src/*:
+    .dir: kebab-case
+    .ts: kebab-case
+    .tsx: kebab-case
+    .jpg: kebab-case
+    .png: kebab-case
+    .svg: kebab-case
+
+ignore:
+  - .git
+  - node_modules

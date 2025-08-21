@@ -1,0 +1,6 @@
+# Backend owner
+*.ts @solnustec/backend
+*.tsx @solnustec/backend
+
+# Devops owner
+/.github/workflows/ @solnustec/ops

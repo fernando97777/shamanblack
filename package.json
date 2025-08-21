@@ -1,0 +1,73 @@
+{
+  "name": "@solnustec/react-native-template",
+  "private": true,
+  "description": "Write a simple description",
+  "author": "Solnustec",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "keywords": [],
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "prepare": "husky",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --write .",
+    "lint-ls": "ls-lint"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@react-navigation/native": "7.0.15",
+    "@react-navigation/native-stack": "7.2.1",
+    "expo": "52.0.39",
+    "expo-font": "13.0.4",
+    "expo-splash-screen": "0.29.22",
+    "expo-status-bar": "2.0.1",
+    "nativewind": "4.1.23",
+    "react": "18.3.1",
+    "react-native": "0.76.7",
+    "react-native-safe-area-context": "4.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.25.2",
+    "@commitlint/cli": "18.6.0",
+    "@commitlint/config-conventional": "18.6.0",
+    "@ls-lint/ls-lint": "2.2.3",
+    "@types/react": "18.3.12",
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
+    "@typescript-eslint/parser": "^8.24.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-jest-dom": "^5.5.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-native": "5.0.0",
+    "eslint-plugin-testing-library": "^7.1.1",
+    "husky": "9.0.10",
+    "lint-staged": "15.2.10",
+    "prettier": "^3.5.0",
+    "rimraf": "5.0.10",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.3.3"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{js,json,md}": [
+      "prettier --write"
+    ]
+  }
+}
