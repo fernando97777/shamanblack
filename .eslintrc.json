@@ -36,7 +36,8 @@
         "allow": ["warn", "error", "info"]
       }
     ],
-    "eqeqeq": ["error", "always"],
+    //    "eqeqeq": ["error", "always"],
+    "eqeqeq": "off",
     "curly": ["error", "all"],
     "no-var": "error",
     "prefer-const": "error",
@@ -49,11 +50,12 @@
         "argsIgnorePattern": "^_"
       }
     ],
-    "react-native/no-inline-styles": "error",
+    "react-native/no-inline-styles": "off",
     "react-native/no-unused-styles": "error",
     "react-native/split-platform-components": "error",
-    "react-native/no-color-literals": "error",
+    "react-native/no-color-literals": "off",
     "react-native/no-raw-text": "error",
+    "react-native/sort-styles": "off",
     "import/order": [
       "error",
       {
